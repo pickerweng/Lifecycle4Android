@@ -2,7 +2,7 @@
 
 Lifecycle4Android provides the interface for developers to wrap callback into Activity/Fragment lifecycle easily. This library is introduced in Android 4 (API Level 14).
 
-### Problem
+### Context
 
 Android native support that [ActivityLifecycleCallbacks](http://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html) for developer to implement their callback wrapper to receive the changed of lifecycle state. But... the callback methods are too much such as [onActivityCreated](http://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html#onActivityCreated(android.app.Activity, android.os.Bundle), [onActivityDestroyed](http://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html#onActivityDestroyed(android.app.Activity), [onActivityPaused](http://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html#onActivityPaused(android.app.Activity) etc. That seems like not beautiful code. Another situation is if we want to do the same operation in every lifecycle state, we need to wrap the logic into every lifecycle state. This will make too much logic in the [ActivityLifecycleCallbacks](http://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html) so that the callback class may be too heavy.
 
@@ -18,7 +18,7 @@ Lifecycle4Android gives you the [LifecycleAction](https://github.com/pickerweng/
 - Print the lifecycle debugging log (Lifecycle4Android has a [PrintLogAction](https://github.com/pickerweng/Lifecycle4Android/blob/master/library/src/main/java/com/meowmau/lifecycle4android/action/PrintLogAction.java) for you)
 - The confirmation for alive status of application component when Activity/Fragment is started.
 
-Another idea? Please let me know.
+Any idea? Please let me know.
 
 ### How to install it?
 
